@@ -1,2 +1,1 @@
-# blog
-Lgc-s.blog - Upcoming Soon
+lgc-s.blog - Upcoming Soon
