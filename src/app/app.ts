@@ -1,11 +1,12 @@
-import { Component, signal } from '@angular/core';
+import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import { Box } from './box/box';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, Box],
   templateUrl: './app.html',
 })
 export class App {
-  protected readonly title = signal('blog');
+  protected readonly title = 'lgc-s.blog';
 }
