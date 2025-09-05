@@ -1,19 +1,1 @@
 @import "tailwindcss";
-
-@layer flow {
-  @keyframes orange-flow {
-    0% {
-      background-color: #fb923c;
-    }
-    50% {
-      background-color: #ea580c;
-    }
-    100% {
-      background-color: #fb923c;
-    }
-  }
-
-.orange-background {
-    animation: orange-flow 4s ease infinite;
-  }
-}
