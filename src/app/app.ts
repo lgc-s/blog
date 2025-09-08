@@ -1,10 +1,11 @@
+import { Button } from './button/button';
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { Button } from './button/button';
+import { Text } from './text/text';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, Button],
+  imports: [Button, RouterOutlet, Text],
   templateUrl: './app.html',
 })
 export class App {

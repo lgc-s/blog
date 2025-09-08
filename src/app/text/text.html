@@ -1,0 +1,10 @@
+@if (image === undefined) {
+    <b class="text-red-500">Invalid Text</b>
+} @else {
+    <div class="flex items-center">
+        @if (image !== "null") {
+            <img src="images/{{ image }}.png" alt="{{ image }}" class="mr-1">
+        }
+        <p class="text-gray-500"><ng-content /></p>
+    </div>
+}
