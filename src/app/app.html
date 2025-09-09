@@ -1,8 +1,8 @@
 <main>
   <div class="flex h-screen items-center justify-center">
-    <div class="border-1 border-gray-100 p-4 rounded-2xl shadow-xl/20 w-1/2">
+    <div class="border-1 border-gray-100 p-4 rounded-2xl shadow-lg/30 w-1/2">
       <div class="flex items-center justify-between">
-        <img src="images/logo.png" alt="lgc-s.blog" />
+        <img src="images/logo.png" alt="logo" />
         <div class="flex w-56 justify-evenly">
           <app-button href="https://www.linkedin.com/in/lgc-s/" text="LinkedIn" />
           <app-button href="https://github.com/lgc-s" text="GitHub" />
@@ -15,11 +15,16 @@
           </div>
         </div>
         <div class="p-4 w-1/4">
-          <div class="border-2 border-gray-100 h-full p-4 rounded-4xl">
-            <app-text image="ex"><b>Text</b></app-text>
-            <app-text image="ex">Text</app-text>
-            <app-text image="null">Text</app-text>
-            <app-text image="null"><b>Text</b></app-text>
+          <div class="border-2 border-gray-100 h-full px-4 py-6 rounded-4xl shrink-0">
+            <div class="flex flex-col items-center justify-center">
+              <img class="rounded-full mb-4 shadow-lg/30" src="images/lgc-s.png" alt="lgc-s">
+              <app-text image="null"><b class="text-gray-700 text-xl">LGC-S</b></app-text>
+              <div class="mt-4 justify-start items-center w-full">
+                  <a href="https://github.com/lgc-s" target="_blank"><app-text image="github" width="w-4">GitHub</app-text></a>
+                  <a href="https://www.linkedin.com/in/lgc-s/" target="_blank"><app-text image="linkedin" width="w-4">LinkedIn</app-text></a>
+                  <a href="https://lgc-s.github.io/portfolio/" target="_blank"><app-text image="portfolio" width="w-4">Portfolio</app-text></a>
+              </div>
+            </div>
           </div>
         </div>
       </div>

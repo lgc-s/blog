@@ -7,4 +7,5 @@ import { Component, Input } from '@angular/core';
 })
 export class Text {
   @Input() image: string | undefined;
+  @Input() width: string | undefined;
 }

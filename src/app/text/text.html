@@ -3,7 +3,7 @@
 } @else {
     <div class="flex items-center">
         @if (image !== "null") {
-            <img src="images/{{ image }}.png" alt="{{ image }}" class="mr-1">
+            <img src="images/{{ image }}.png" alt="{{ image }}" class="mr-1 {{ width }}">
         }
         <p class="text-gray-500"><ng-content /></p>
     </div>
