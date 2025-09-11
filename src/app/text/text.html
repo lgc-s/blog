@@ -5,6 +5,6 @@
         @if (image !== "null") {
             <img src="images/{{ image }}.png" alt="{{ image }}" class="mr-1 {{ width }}">
         }
-        <p class="text-gray-500"><ng-content /></p>
+        <p class="text-gray-500" [ngClass]="link ? 'duration-300 ease-in-out hover:text-orange-500' : ''"><ng-content /></p>
     </div>
 }
