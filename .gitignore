@@ -29,4 +29,4 @@ yarn-error.log*
 
 # Firebase Backend
 
-/src/enviroments/
+/src/environments/
