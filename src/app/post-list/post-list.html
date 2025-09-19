@@ -1,0 +1,7 @@
+<div>
+    <div *ngIf="posts$ | async as posts" class="space-y-4">
+        <ng-container *ngFor="let post of posts">
+            <app-post-detail [post]="post"></app-post-detail>
+        </ng-container>
+    </div>
+</div>

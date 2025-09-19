@@ -1,0 +1,20 @@
+<div class="p-4 w-full">
+    <div class="border-2 border-gray-100 h-full px-6 py-6 rounded-4xl shrink-0">
+        <div class="flex flex-col h-full">
+            <app-text image="null"><b class="pb-1 text-gray-500 text-3xl">{{ post.title }}</b></app-text>
+            <div class="border-b-2 border-gray-100 mt-1 w-full"></div>
+            <div class="flex my-1">
+                <app-text image="null">{{ post.author }} · 🕒 {{ post.date }}</app-text>
+            </div>
+            <div class="flex flex-wrap mt-1">
+                <ng-container *ngFor="let tag of post.tags">
+                    <app-button [text]="tag" />
+                </ng-container>
+            </div>
+            <img class="rounded-2xl my-6 shadow-lg/30" [src]="post.image" alt="">
+            <ng-container *ngFor="let paragraph of post.content">
+                <app-text class="my-3" image="null">{{ paragraph }}</app-text>
+            </ng-container>
+        </div>
+    </div>
+</div>
