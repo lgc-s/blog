@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Firestore, collectionData, collection } from '@angular/fire/firestore';
+import { Firestore, collectionData, collection, query, orderBy, Timestamp } from '@angular/fire/firestore';
 import { Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 
@@ -11,6 +11,7 @@ export interface Post {
   tags: string[];
   image: string;
   content: string[];
+  time: Timestamp;
 }
 
 @Injectable({
@@ -22,7 +23,8 @@ export class PostService {
 
   getPosts(): Observable<Post[]> {
     const postsCollection = collection(this.firestore, 'posts');
-    return collectionData(postsCollection, { idField: 'id' }) as Observable<Post[]>;
+    const orderedQuery = query(postsCollection, orderBy('time', 'desc'));
+    return collectionData(orderedQuery, { idField: 'id' }) as Observable<Post[]>;
   }
 
   getPostCount(): Observable<number> {
