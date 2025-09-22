@@ -3,40 +3,75 @@
     <div class="border-1 border-gray-100 h-full m-16 p-4 rounded-2xl shadow-lg/30 w-3/5">
       <div class="flex items-center m-4 justify-between">
         <img src="images/logo.png" alt="logo" />
-        <div class="flex items-center justify-center space-x-2 mb-6">
-          <p class="text-lg text-gray-700"><b>Total Posts:</b></p>
-        <span class="font-bold text-xl text-gray-500">{{ postCount$ | async }}</span>
-    </div>
       </div>
       <div class="flex mt-4">
         <app-post-list class="w-3/4"></app-post-list>
         <div class="p-4 w-1/4">
-          <div class="border-2 border-gray-100 h-full px-4 py-6 rounded-4xl shrink-0">
+          <div class="border-2 border-gray-100 p-6 rounded-4xl shrink-0">
             <div class="flex flex-col items-center justify-center">
               <img class="rounded-full mb-4 shadow-md/40" src="images/lgc-s.png" alt="lgc-s">
-              <app-text image="null"><b class="text-gray-700 text-xl">LGC-S</b></app-text>
+              <app-text image="null"><b class="text-gray-700 text-xl">Luis Silva</b></app-text>
               <app-text image="null"><b>🛠️ Front-End Developer</b></app-text>
               <div class="flex flex-col items-start justify-center mt-4 w-full">
                 <app-text image="null"><b class="text-gray-700">Main Websites</b></app-text>
-                <a href="https://github.com/lgc-s" target="_blank"><app-text image="github" [link]=true width="w-4">GitHub</app-text></a>
-                <a href="https://www.linkedin.com/in/lgc-s/" target="_blank"><app-text image="linkedin" [link]=true width="w-4">LinkedIn</app-text></a>
-                <a href="https://lgc-s.github.io/portfolio/" target="_blank"><app-text image="portfolio" [link]=true width="w-4">Portfolio</app-text></a>
+                <div class="mt-1">
+                  <a href="https://github.com/lgc-s" target="_blank"><app-text class="text-sm" image="github" [link]=true width="w-4">GitHub</app-text></a>
+                </div>
+                <div class="mt-1">
+                  <a href="https://www.linkedin.com/in/lgc-s/" target="_blank"><app-text class="text-sm" image="linkedin" [link]=true width="w-4">LinkedIn</app-text></a>
+                </div>
+                <div class="mt-1">
+                  <a href="https://lgc-s.github.io/portfolio/" target="_blank"><app-text class="text-sm" image="portfolio" [link]=true width="w-4">Portfolio</app-text></a>
+                </div>
               </div>
               <div class="flex flex-col items-start justify-center mt-4 w-full">
                 <app-text image="null"><b class="text-gray-700">Projects</b></app-text>
-                <a href="https://newviainformatica.com.br/" target="_blank"><app-text image="newvia" [link]=true width="w-4">Newvia</app-text></a>
-                <a href="https://lgc-s.github.io/vistadoro/" target="_blank"><app-text image="vistadoro" [link]=true width="w-4">Vistadoro</app-text></a>
-                <a href="https://github.com/lgc-s/basketstar" target="_blank"><app-text image="basketstar" [link]=true width="w-4">Basketstar</app-text></a>
-                <a href="https://lgc-s.github.io/inbv/" target="_blank"><app-text image="inbv" [link]=true width="w-4">INBV (WIP)</app-text></a>
+                <div class="mt-1">
+                  <a href="https://newviainformatica.com.br/" target="_blank"><app-text class="text-sm" image="newvia" [link]=true width="w-4">Newvia</app-text></a>
+                </div>
+                <div class="mt-1">
+                  <a href="https://lgc-s.github.io/vistadoro/" target="_blank"><app-text class="text-sm" image="vistadoro" [link]=true width="w-4">Vistadoro</app-text></a>
+                </div>
+                <div class="mt-1">
+                  <a href="https://github.com/lgc-s/basketstar" target="_blank"><app-text class="text-sm" image="basketstar" [link]=true width="w-4">Basketstar</app-text></a>
+                </div>
+                <div class="mt-1">
+                  <a href="https://lgc-s.github.io/inbv/" target="_blank"><app-text class="text-sm" image="inbv" [link]=true width="w-4">INBV (WIP)</app-text></a>
+                </div>
               </div>
               <div class="flex flex-col items-start justify-center mt-4 w-full">
                 <app-text image="null"><b class="text-gray-700">Contacts</b></app-text>
-                <a href="https://github.com/lgc-s" target="_blank"><app-text image="github" [link]=true width="w-4">GitHub</app-text></a>
-                <a href="https://www.linkedin.com/in/lgc-s/" target="_blank"><app-text image="linkedin" [link]=true width="w-4">LinkedIn</app-text></a>
-                <a href="https://wa.me/558197278307" target="_blank"><app-text image="whatsapp" [link]=true width="w-4">WhatsApp</app-text></a>
-                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=luisguilhermecs3@gmail.com&su=Contact+for+LGC-S&body=Write+your+message+here." target="_blank"><app-text image="email" [link]=true width="w-4">E-mail</app-text></a>
+                <div class="mt-1">
+                  <a href="https://github.com/lgc-s" target="_blank"><app-text class="text-sm" image="github" [link]=true width="w-4">GitHub</app-text></a>
+                </div>
+                <div class="mt-1">
+                  <a href="https://www.linkedin.com/in/lgc-s/" target="_blank"><app-text class="text-sm" image="linkedin" [link]=true width="w-4">LinkedIn</app-text></a>
+                </div>
+                <div class="mt-1">
+                  <a href="https://wa.me/558197278307" target="_blank"><app-text class="text-sm" class="text-sm" image="whatsapp" [link]=true width="w-4">WhatsApp</app-text></a>
+                </div>
+                <div class="mt-1">
+                  <a href="https://mail.google.com/mail/?view=cm&fs=1&to=luisguilhermecs3@gmail.com&su=Contact+for+LGC-S&body=Write+your+message+here." target="_blank"><app-text class="text-sm" image="email" [link]=true width="w-4">E-mail</app-text></a>
+                </div>
               </div>
             </div>
+          </div>
+          <div class="border-2 border-gray-100 flex mt-4 p-3 px-5 rounded-full shrink-0">
+            <app-text image="null"><b class="text-gray-700 mr-1">Total Posts:</b></app-text>
+            <app-text image="null"> {{ postCount$ | async }} </app-text>
+          </div>
+          <div class="border-2 border-gray-100 flex flex-col items-center mt-4 py-4 px-6 rounded-4xl shrink-0">
+            <app-text image="null"><b class="text-gray-700">Randon Fun Fact</b></app-text>
+            <app-text image="null"><span class="text-sm">Test</span></app-text>
+          </div>
+          <div class="border-2 border-gray-100 flex flex-col mt-4 py-4 px-6 rounded-4xl shrink-0">
+            <app-text image="null"><b class="text-gray-700">Post List</b></app-text>
+            <app-text image="null"><b class="text-sm">September</b></app-text>
+            <app-text image="null"><span class="ml-2 text-xs">1st lgc-s.blog development log</span></app-text>
+            <app-text image="null"><span class="ml-2 text-xs">2nd lgc-s.blog development log</span></app-text>
+            <app-text image="null"><span class="ml-2 text-xs">3rd lgc-s.blog development log</span></app-text>
+            <app-text image="null"><span class="ml-2 text-xs">3rd lgc-s.blog development log</span></app-text>
+            <app-text image="null"><span class="ml-2 text-xs">3rd lgc-s.blog development log</span></app-text>
           </div>
         </div>
       </div>
