@@ -1,12 +1,12 @@
 @if (href) {
     <a [href]="href" target="_blank">
-        <div class="bg-orange-500 duration-300 ease-in-out hover:bg-orange-600 m-1 p-1 px-2 rounded-full select-none text-center text-white transition">
+        <div class="border-2 border-orange-500 duration-300 ease-in-out hover:bg-orange-500 m-1 p-1 px-2 rounded-full select-none text-center text-orange-500 transition">
             <b>{{ text }}</b>
         </div>
     </a>
 
 } @else {
-    <p class="bg-orange-500 duration-300 ease-in-out hover:bg-orange-600 m-1 p-1 px-2 rounded-full select-none text-sm text-center text-white transition">
+    <p class="border-2 border-orange-500 duration-300 ease-in-out hover:bg-orange-500 hover:text-white m-1 p-1 px-2 rounded-full select-none text-sm text-center text-orange-500 transition">
         <b>{{ text }}</b>
     </p>
 }

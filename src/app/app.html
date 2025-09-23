@@ -1,13 +1,13 @@
 <main>
   <div class="flex items-center justify-center">
-    <div class="border-1 border-gray-100 h-full m-16 p-4 rounded-2xl shadow-lg/30 w-3/5">
-      <div class="flex items-center m-4 justify-between">
-        <img src="images/logo.png" alt="logo" />
+    <div class="h-full mx-16 p-4 w-4/5">
+      <div class="flex items-center m-4 mb-16 justify-between">
+        <img class="ml-8" src="images/logo.png" alt="logo" />
       </div>
       <div class="flex mt-4">
-        <app-post-list class="w-3/4"></app-post-list>
-        <div class="p-4 w-1/4">
-          <div class="border-2 border-gray-100 p-6 rounded-4xl shrink-0">
+        <app-post-list class="w-4/5"></app-post-list>
+        <div class="p-4 w-1/5">
+          <div class="border-1 border-gray-100 p-6 rounded-2xl shrink-0 shadow-md">
             <div class="flex flex-col items-center justify-center">
               <img class="rounded-full mb-4 shadow-md/40" src="images/lgc-s.png" alt="lgc-s">
               <app-text image="null"><b class="text-gray-700 text-xl">Luis Silva</b></app-text>
@@ -56,15 +56,15 @@
               </div>
             </div>
           </div>
-          <div class="border-2 border-gray-100 flex mt-4 p-3 px-5 rounded-full shrink-0">
+          <div class="border-1 border-gray-100 flex mt-4 p-3 px-5 rounded-2xl shrink-0 shadow-md">
             <app-text image="null"><b class="text-gray-700 mr-1">Total Posts:</b></app-text>
             <app-text image="null"> {{ postCount$ | async }} </app-text>
           </div>
-          <div class="border-2 border-gray-100 flex flex-col items-center mt-4 py-4 px-6 rounded-4xl shrink-0">
+          <div class="border-1 border-gray-100 flex flex-col items-center mt-4 py-4 px-6 rounded-2xl shrink-0 shadow-md">
             <app-text image="null"><b class="text-gray-700">Randon Fun Fact</b></app-text>
             <app-text image="null"><span class="text-sm">Test</span></app-text>
           </div>
-          <div class="border-2 border-gray-100 flex flex-col mt-4 py-4 px-6 rounded-4xl shrink-0">
+          <div class="border-1 border-gray-100 flex flex-col mt-4 py-4 px-6 rounded-2xl shrink-0 shadow-md">
             <app-text image="null"><b class="text-gray-700">Post List</b></app-text>
             <app-text image="null"><b class="text-sm">September</b></app-text>
             <app-text image="null"><span class="ml-2 text-xs">1st lgc-s.blog development log</span></app-text>
@@ -75,10 +75,10 @@
           </div>
         </div>
       </div>
-      <div class="flex items-center justify-center h-full">
-        <app-text image="null"><b>©2025 - lgc-s.blog</b></app-text>
-      </div>
     </div>
+  </div>
+  <div class="flex items-center justify-center h-full mb-8">
+    <app-text image="null"><b class="text-gray-500">©2025 - lgc-s.blog</b></app-text>
   </div>
 </main>
 
