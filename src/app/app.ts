@@ -5,10 +5,11 @@ import { PostList } from './post-list/post-list';
 import { Post, PostService } from './post-service/post-service';
 import { Observable } from 'rxjs';
 import { AsyncPipe } from '@angular/common';
+import { Fact } from './fact/fact';
 
 @Component({
   selector: 'app-root',
-  imports: [AsyncPipe, RouterOutlet, PostList, Text],
+  imports: [AsyncPipe, RouterOutlet, PostList, Text, Fact],
   templateUrl: './app.html',
 })
 export class App {

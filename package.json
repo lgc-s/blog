@@ -6,7 +6,9 @@
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "deploy:prod": "ng build --configuration production --base-href=/blog/",
+    "deploy:dev": "ng build --base-href=/blog/"
   },
   "prettier": {
     "printWidth": 100,
