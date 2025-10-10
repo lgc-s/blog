@@ -12,11 +12,16 @@ import { Fact } from './fact/fact';
   imports: [AsyncPipe, RouterOutlet, PostList, Text, Fact],
   templateUrl: './app.html',
 })
+
 export class App {
   posts$!: Observable<Post[]>;
   postCount$!: Observable<number>;
+  currentYear: number;
 
-  constructor(private postService: PostService) {}
+  constructor(private postService: PostService) {
+    const currentDate = new Date();
+    this.currentYear = currentDate.getFullYear();
+  }
 
   ngOnInit() {
     this.posts$ = this.postService.getPosts();
